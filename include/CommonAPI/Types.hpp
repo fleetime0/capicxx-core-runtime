@@ -10,6 +10,7 @@
 #ifndef COMMONAPI_TYPES_HPP_
 #define COMMONAPI_TYPES_HPP_
 
+#include <string>
 #include <cstdint>
 #include <functional>
 #include <unordered_set>
