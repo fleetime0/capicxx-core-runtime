@@ -106,7 +106,7 @@ IF(MSVC)
     add_definitions(-DCOMMONAPI_INTERNAL_COMPILATION -DCOMMONAPI_DLL_COMPILATION)
     add_compile_options(/EHsc /wd4996)
 ELSE ()
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wall -Wextra -Werror=extra-semi -Wformat -Wformat-security -Wconversion -fexceptions -fstrict-aliasing -fstack-protector-strong -fasynchronous-unwind-tables -fno-omit-frame-pointer -Werror -DCOMMONAPI_INTERNAL_COMPILATION -fvisibility=hidden")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wall -Wextra -Wformat -Wformat-security -Wconversion -fexceptions -fstrict-aliasing -fstack-protector-strong -fasynchronous-unwind-tables -fno-omit-frame-pointer -Werror -DCOMMONAPI_INTERNAL_COMPILATION -fvisibility=hidden")
     set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wformat-security -fstack-protector-strong")
 ENDIF(MSVC)
 
